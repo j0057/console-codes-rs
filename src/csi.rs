@@ -141,6 +141,8 @@ impl<'a> std::fmt::Display for CSI<'a> {
 #[cfg(test)]
 mod test {
     use super::CSI;
+    use crate::sgr::SGR;
+    use crate::color::Color;
 
     #[test]
     fn test_eq() {
@@ -154,5 +156,19 @@ mod test {
         let a = CSI::CUU(3);
         let b = CSI::CUD(3);
         assert!(a != b);
+    }
+
+    #[test]
+    fn test_clone() {
+        let a = CSI::CUU(3);
+        let b = a.clone();
+        assert!(a == b);
+    }
+
+    #[test]
+    fn test_copy() {
+        let a = CSI::SGR(&[SGR::FG(Color::Red)]);
+        let b = a;
+        assert!(a == b);
     }
 }
