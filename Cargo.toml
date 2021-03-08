@@ -1,6 +1,6 @@
 [package]
 name = "console-codes"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Joost Molenaar <jjm@j0057.nl>"]
 edition = "2018"
 description = "Enums for rendering console codes"
