@@ -137,3 +137,22 @@ impl<'a> std::fmt::Display for CSI<'a> {
         })
     }
 }
+
+#[cfg(test)]
+mod test {
+    use super::CSI;
+
+    #[test]
+    fn test_eq() {
+        let a = CSI::CUU(3);
+        let b = CSI::CUU(3);
+        assert!(a == b);
+    }
+
+    #[test]
+    fn test_neq() {
+        let a = CSI::CUU(3);
+        let b = CSI::CUD(3);
+        assert!(a != b);
+    }
+}
