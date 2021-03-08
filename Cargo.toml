@@ -5,6 +5,7 @@ authors = ["Joost Molenaar <jjm@j0057.nl>"]
 edition = "2018"
 description = "Enums for rendering console codes"
 documentation = "https://docs.rs/console-codes"
+readme = "README.md"
 homepage = "https://github.com/j0057/console-codes-rs"
 repository = "https://github.com/j0057/console-codes-rs"
 license = "MIT"
