@@ -1,0 +1,7 @@
+[package]
+name = "console-codes"
+version = "0.1.0"
+authors = ["Joost Molenaar <jjm@j0057.nl>"]
+edition = "2018"
+
+[dependencies]
