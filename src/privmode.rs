@@ -1,4 +1,4 @@
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Eq, PartialEq)]
 pub enum PrivateMode {
     /// Cursor keys ESC 0 prefix instead of ESC [
     DECCKM = 1,

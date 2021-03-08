@@ -1,6 +1,6 @@
 use crate::color::Color;
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Eq, PartialEq)]
 pub enum SGR {
     Reset,
     Bold,

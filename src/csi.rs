@@ -3,7 +3,7 @@ use crate::privmode::PrivateMode;
 use crate::color::Color;
 use crate::sgr::SGR;
 
-#[derive(Debug)]
+#[derive(Debug, Eq, PartialEq)]
 pub enum CSI<'a> {
     /// CUrsor Up
     CUU(u16),
